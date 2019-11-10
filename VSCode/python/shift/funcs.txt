@@ -1,0 +1,97 @@
+-------------------------------------------------------------------------
+mian.py :
+def withFile(mode, inputFile, password):
+    backstate = False
+    No = 0x1
+    t1 = time.perf_counter()
+    try:
+        if (mode == 'ef'):
+            with open(inputFile, 'r') as fi:
+                outputFile = inputFile+'.bin'
+                with open(outputFile, 'wb') as fo:
+                    fo.write(b'\u6797\u6eaa\r\n')
+                    line = fi.readline()
+                    while(line):
+                        if (line != '\r\n' and line != '\n'):
+                            obj = Small(line.strip(), password)
+                            obj.smallin(0x0)
+                            fo.write(bytes(obj.string, encoding='utf-8'))
+                            obj.tozero()
+                        else:
+                            No = No
+                        No += 1
+                        line = fi.readline()
+                        if (not line):
+                            break
+                        fo.write(b'\r\n')
+                    print(f'Totaly {No} lines. ')
+
+        elif(mode == 'df'):
+            with open(inputFile, 'rb') as fi:
+                outputFile = inputFile.strip('.bin')
+                with open(outputFile, 'w', encoding='UTF-8') as fo:
+                    line = fi.readline().decode('utf-8')
+                    if (line != '\\u6797\\u6eaa\r\n'):  # [:0xe]
+                        print('NOT LINXI FILE!')
+                        return backstate
+                    line = fi.readline().decode('utf-8')
+                    while(line):
+                        if (line != '\r\n' and line != '\n'):
+                            obj = Small(line.strip(), password)
+                            obj.smallout(0x0, 0x1)
+                            fo.write(obj.string)
+                            obj.tozero()
+                        else:
+                            No = No
+                        line = fi.readline().decode('utf-8')
+                        if (not line):
+                            break
+                        fo.write('\n')
+                        No += 1
+                    print(f'Totaly {No} lines. ')
+    except(TypeError):
+        print("WRONG PASSWORD(　o=^•ェ•)o　┏━┓")
+        raise
+    t2 = time.perf_counter()        
+    return t2-t1
+
+---------------------------------------------------------------------------------------
+small.py:
+
+    def shift(self, string, shiftString, shiftNum, modeNum):
+        string, shiftString = list(string), list(shiftString)
+        length = len(string) if (len(string) < len(shiftString)) else len(shiftString)
+        for i in range(length):
+            string[i] = chr((ord(string[i]) + ord(shiftString[i]) + shiftNum) % modeNum)
+        return ''.join(string)
+
+    # 反移解密
+
+
+    def unshift(self, string, shiftString, shiftNum, modeNum, fileMode):
+        string, shiftString = list(string), list(shiftString)
+        length = len(shiftString) if (len(string) > len(shiftString)) else len(string)
+        try:
+            if (fileMode):
+                if (isinstance(string[0], str)):
+                    for i in range(length):
+                        if(ord(string[i]) > shiftNum):
+                            string[i] = chr(ord(string[i]) - ord(shiftString[i]) - shiftNum)
+                        else:
+                            string[i] = chr(ord(string[i]) + modeNum - ord(shiftString[i]) - shiftNum)
+                    string = ''.join(string)
+                else:
+                    print("Another showed up!!!")
+            else:
+                if (isinstance(string[0], str)):
+                    for i in range(length):
+                        if(ord(string[i]) > shiftNum):
+                            string[i] = chr((ord(string[i]) - ord(shiftString[i]) - shiftNum))
+                        else:
+                            string[i] = chr((ord(string[i]) + modeNum - ord(shiftString[i]) - shiftNum))
+                    string = ''.join(string)
+                else:
+                    print("Another showed up!!!")
+        except(ValueError):
+            raise
+        return string

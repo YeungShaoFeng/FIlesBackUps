@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <title>Ajax</title>
+</head>
+<body>
+    <button id="button">Load GitHub Users</button>
+    <br><br>
+    <h1>GitHub Users</h1>
+    <div id="users"></div>
+
+
+    <script>
+        document.getElementById('button').addEventListener('click', loadUsers);
+        function loadUsers(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://api.github.com/users");
+
+            xhr.onload = function(){
+                if(this.status == 200){
+                    var users = JSON.parse(this.responseText);
+
+                    console.log(users);
+                }
+            }
+            xhr.send();
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+# 爬虫的流程：
+
+## 请求数据：
+pip install requests
+
+## 解析数据：
+1. BeautifulSoup4（难度：最低。执行效率：最低。）
+2. pyquery（难度：一般。执行效率：一般。）
+3. xpath（难度：简单。执行效率：中等偏上。）
+4. 正则表达式（难度：最难。执行效率：最高。）
+5. HTMLParser（难度：很难。执行效率：不高。）
+
+综合人类和机器考虑，采用xpath。
+lxml：pip install lxml
+
+## 存储数据：
+1. 数据库。
+2. CSV。
+3. JSON。
+4. EXCEL。
+5. Redis。
+6. MongoDB。
+7. MySQL数据库等。
+8. 等等。

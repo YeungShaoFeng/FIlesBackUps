@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Statical",
+            "request": "launch",
+            "mainClass": "Statical"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Constructors",
+            "request": "launch",
+            "mainClass": "Constructors"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClassesAndObjects",
+            "request": "launch",
+            "mainClass": "ClassesAndObjects"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MultidimensionalArray",
+            "request": "launch",
+            "mainClass": "MultidimensionalArray"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NewArray",
+            "request": "launch",
+            "mainClass": "NewArray"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GetInput",
+            "request": "launch",
+            "mainClass": "GetInput"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NumericalOperations",
+            "request": "launch",
+            "mainClass": "NumericalOperations"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringConcatenation",
+            "request": "launch",
+            "mainClass": "StringConcatenation"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - innerHelloWorld",
+            "request": "launch",
+            "mainClass": "innerHelloWorld"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+base_url="https://girlimg.epio.app/article?page={}"
+scrollToBottom="var q=document.documentElement.scrollTop=100000"
+indentations={"eins" : "|", "zwei" : "|  |", "drei" : "|  |  |"}
+pics_url_xpath='//p/img'
+title_xpath='//div[@class="title___17ixo"]'
+pic_sets_url_xpath='//div[@class="heading___2FHP3"]/a'
+profile_dir="C:\\Users\\20131\\AppData\\Local\\Google\\Chrome\\User Data"
+picSets_dir="D:\\Girlimg_epio_app\\Glitograms"
+headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"}
+jsonPath='./AllPicsURL/URL.json'
+pic_setsData={}
+pic_urlsData={}

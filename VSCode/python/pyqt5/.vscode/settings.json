@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Users\\20131\\Anaconda3\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "pyqt-integration.qtdesigner.path": "C:\\Users\\20131\\Anaconda3\\Lib\\site-packages\\pyqt5_tools\\designer.exe",
+    "editor.renderIndentGuides": true,
+    "explorer.confirmDelete": false,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=PyQt5"
+    ]
+}

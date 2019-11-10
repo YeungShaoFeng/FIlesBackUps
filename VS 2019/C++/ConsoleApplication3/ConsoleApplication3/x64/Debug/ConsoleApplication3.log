@@ -1,0 +1,10 @@
+﻿  ConsoleApplication3.cpp
+  go.cpp
+D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.cpp(6): error C2084: function 'go::go(int,int)' already has a body
+  D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.h(5): note: see previous definition of '{ctor}'
+D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.cpp(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.cpp(12): error C2556: 'int go::show(void)': overloaded function differs only by return type from 'void go::show(void)'
+  D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.h(8): note: see declaration of 'go::show'
+D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.cpp(11): error C2371: 'go::show': redefinition; different basic types
+  D:\VS 2019\C++\ConsoleApplication3\ConsoleApplication3\go.h(8): note: see declaration of 'go::show'
+  Generating Code...

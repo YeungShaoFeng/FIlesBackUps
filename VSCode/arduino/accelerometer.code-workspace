@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "mpu6050",
+			"path": "mpu6050"
+		},
+		{
+			"name": "i2cscanner",
+			"path": "i2cscanner"
+		},
+		{
+			"name": "test",
+			"path": "test\\test"
+		},
+		{
+			"path": "D:\\data\\MPU6050_Kalman"
+		},
+		{
+			"name": "190517-210756-uno",
+			"path": "C:\\Users\\20131\\Documents\\PlatformIO\\Projects\\190517-210756-uno"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\20131\\.platformio\\penv\\Scripts;C:\\Users\\20131\\.platformio\\penv;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\20131\\Anaconda3\\;;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\20131\\Anaconda3;C:\\Users\\20131\\Anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\20131\\Anaconda3\\Library\\usr\\bin;C:\\Users\\20131\\Anaconda3\\Library\\bin;C:\\Users\\20131\\Anaconda3\\Scripts;C:\\Users\\20131\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\20131\\VSCode\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\20131\\Anaconda3\\;;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\20131\\Anaconda3;C:\\Users\\20131\\Anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\20131\\Anaconda3\\Library\\usr\\bin;C:\\Users\\20131\\Anaconda3\\Library\\bin;C:\\Users\\20131\\Anaconda3\\Scripts;C:\\Users\\20131\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\20131\\VSCode\\bin",
+			"PLATFORMIO_CALLER": "vscode"
+		},
+		"files.autoSave": "onFocusChange"
+	}
+}

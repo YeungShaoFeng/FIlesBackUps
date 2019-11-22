@@ -1,0 +1,24 @@
+{
+    "usesrId": "123",
+    "localPath": "./username",
+    "userFoldersInfo": [
+        {
+            "name": "01",
+            "localPath": "./username/01",
+            "count": 33,
+            "urls": [
+                "url1",
+                "url2"
+            ]
+        },
+        {
+            "name": "01",
+            "path": "./username/02",
+            "count": 33,
+            "urls": [
+                "url1",
+                "url2"
+            ]
+        }
+    ]
+}
